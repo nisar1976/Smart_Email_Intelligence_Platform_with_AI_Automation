@@ -57,3 +57,18 @@ htmlcov/
 # Logs
 logs/
 *.log
+
+# Generated files and caches
+generated/
+rag_index/
+settings_store.json
+email_agent.db
+
+# Frontend
+node_modules/
+frontend/dist/
+frontend/.env.local
+
+# RAG index (can be regenerated)
+*.faiss
+docstore.pkl

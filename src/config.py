@@ -7,7 +7,8 @@ Never commit .env files or hardcode credentials.
 import os
 from typing import Literal
 from dotenv import load_dotenv
-from pydantic import BaseSettings, Field
+from pydantic import Field
+from pydantic_settings import BaseSettings
 
 # Load environment variables from .env file
 load_dotenv()
@@ -17,7 +18,7 @@ class Settings(BaseSettings):
     """Application settings loaded from environment variables."""
 
     # OpenAI Configuration
-    openai_api_key: str = Field(..., env="OPENAI_API_KEY")
+    openai_api_key: str = Field(default="", env="OPENAI_API_KEY")
     openai_model: str = "gpt-4"
 
     # CRM Configuration
@@ -33,6 +34,10 @@ class Settings(BaseSettings):
     sender_email: str = Field(default="no-reply@example.com", env="SENDER_EMAIL")
     sender_name: str = Field(default="OHM Team", env="SENDER_NAME")
 
+    # Gmail Configuration (for SMTP sending)
+    gmail_email: str = Field(default="", env="GMAIL_EMAIL")
+    gmail_app_password: str = Field(default="", env="GMAIL_APP_PASSWORD")
+
     # Environment
     environment: Literal["development", "staging", "production"] = "development"
     log_level: str = "INFO"
@@ -40,9 +45,10 @@ class Settings(BaseSettings):
     # Database (optional)
     database_url: str = Field(default="sqlite:///./email_agent.db", env="DATABASE_URL")
 
-    class Config:
-        env_file = ".env"
-        case_sensitive = False
+    # Webhook Configuration
+    webhook_port: int = Field(default=8000, env="WEBHOOK_PORT")
+
+    model_config = {"env_file": ".env", "case_sensitive": False}
 
     def validate_crm_config(self) -> None:
         """Validate that required CRM credentials are provided."""
@@ -63,6 +69,5 @@ class Settings(BaseSettings):
             )
 
 
-# Global settings instance
+# Global settings instance (lazy initialization - do not validate CRM at import time)
 settings = Settings()
-settings.validate_crm_config()

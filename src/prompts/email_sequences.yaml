@@ -1,0 +1,395 @@
+sequences:
+  onboarding:
+    total_emails: 7
+    campaign_type: "onboarding"
+    description: "Welcome sequence for new Phoenix members"
+    emails:
+      - step: 1
+        tone: "warm, welcoming"
+        purpose: "Welcome + community intro"
+        cta: "Explore Path of the Phoenix"
+        key_messages:
+          - "alignment"
+          - "renewal"
+          - "conscious evolution"
+        length: "short"
+
+      - step: 2
+        tone: "educational, aspirational"
+        purpose: "How OHM works - frequency-based therapy introduction"
+        cta: "Learn about our approach"
+        key_messages:
+          - "frequency-based EMF longevity therapy"
+          - "scientific foundation"
+          - "universal harmony"
+        length: "medium"
+
+      - step: 3
+        tone: "social proof, aspirational"
+        purpose: "Member stories and testimonials"
+        cta: "Read member experiences"
+        key_messages:
+          - "community of conscious seekers"
+          - "real transformation"
+          - "alignment through practice"
+        length: "medium"
+
+      - step: 4
+        tone: "practical, inviting"
+        purpose: "Getting started guide"
+        cta: "Start your first session"
+        key_messages:
+          - "ease of use"
+          - "guided experience"
+          - "personalized path"
+        length: "medium"
+
+      - step: 5
+        tone: "educational, mystical"
+        purpose: "Deep dive into frequency work"
+        cta: "Explore frequency science"
+        key_messages:
+          - "harmony and balance"
+          - "ancient wisdom + modern science"
+          - "digital-first spiritual platform"
+        length: "long"
+
+      - step: 6
+        tone: "reflective, personal"
+        purpose: "Reflection and integration"
+        cta: "Journal your journey"
+        key_messages:
+          - "conscious evolution"
+          - "personal alignment"
+          - "ongoing practice"
+        length: "medium"
+
+      - step: 7
+        tone: "supportive, communal"
+        purpose: "Community and support resources"
+        cta: "Join the community"
+        key_messages:
+          - "you're not alone"
+          - "collective evolution"
+          - "continuous growth"
+        length: "medium"
+
+  upsell_phoenix_visionary:
+    total_emails: 5
+    campaign_type: "upsell_phoenix_visionary"
+    description: "Phoenix to Visionary upgrade sequence"
+    emails:
+      - step: 1
+        tone: "aspirational, value-focused"
+        purpose: "Unlock advanced features"
+        cta: "Discover Visionary"
+        key_messages:
+          - "frequency healing"
+          - "biometric tracking"
+          - "personalized protocols"
+        length: "short"
+
+      - step: 2
+        tone: "educational, comparative"
+        purpose: "Feature comparison and benefits"
+        cta: "See what's included"
+        key_messages:
+          - "advanced insights"
+          - "deeper practice"
+          - "accelerated alignment"
+        length: "medium"
+
+      - step: 3
+        tone: "social proof, aspirational"
+        purpose: "Member success stories from Visionary tier"
+        cta: "Read Visionary stories"
+        key_messages:
+          - "transformation at scale"
+          - "community impact"
+          - "measurable evolution"
+        length: "medium"
+
+      - step: 4
+        tone: "exclusive, urgent"
+        purpose: "Limited time offer or special benefit"
+        cta: "Upgrade now"
+        key_messages:
+          - "exclusive access"
+          - "early adopter advantage"
+          - "special promotion"
+        length: "short"
+
+      - step: 5
+        tone: "supportive, encouraging"
+        purpose: "Final encouragement to level up"
+        cta: "Begin your Visionary journey"
+        key_messages:
+          - "you're ready"
+          - "accelerate your evolution"
+          - "unlock potential"
+        length: "short"
+
+  upsell_visionary_infinity:
+    total_emails: 5
+    campaign_type: "upsell_visionary_infinity"
+    description: "Visionary to Infinity upgrade sequence"
+    emails:
+      - step: 1
+        tone: "premium, exclusive"
+        purpose: "Welcome to the highest tier"
+        cta: "Explore Infinity"
+        key_messages:
+          - "ultimate alignment"
+          - "complete mastery"
+          - "infinite potential"
+        length: "short"
+
+      - step: 2
+        tone: "educational, transformational"
+        purpose: "Infinity-only benefits and features"
+        cta: "See elite benefits"
+        key_messages:
+          - "personalized coaching"
+          - "custom protocols"
+          - "maximum frequency optimization"
+        length: "medium"
+
+      - step: 3
+        tone: "social proof, aspirational"
+        purpose: "Infinity member testimonials"
+        cta: "Learn from elite members"
+        key_messages:
+          - "peak performance"
+          - "transcendent evolution"
+          - "community leadership"
+        length: "medium"
+
+      - step: 4
+        tone: "urgent, exclusive"
+        purpose: "Limited availability messaging"
+        cta: "Secure your spot"
+        key_messages:
+          - "exclusive community"
+          - "premium support"
+          - "lifetime value"
+        length: "short"
+
+      - step: 5
+        tone: "welcoming, supportive"
+        purpose: "Welcome to the Infinity community"
+        cta: "Join the elite"
+        key_messages:
+          - "you've arrived"
+          - "full potential unlocked"
+          - "evolve with masters"
+        length: "short"
+
+  reactivation:
+    total_emails: 6
+    campaign_type: "reactivation"
+    description: "Win-back sequence for churned members"
+    emails:
+      - step: 1
+        tone: "caring, reflective"
+        purpose: "We miss you - genuine outreach"
+        cta: "Let's reconnect"
+        key_messages:
+          - "your journey mattered"
+          - "we value your presence"
+          - "evolution awaits"
+        length: "short"
+
+      - step: 2
+        tone: "informative, exciting"
+        purpose: "What's new in OHM since you left"
+        cta: "Discover new features"
+        key_messages:
+          - "innovation"
+          - "continuous evolution"
+          - "new opportunities"
+        length: "medium"
+
+      - step: 3
+        tone: "empathetic, understanding"
+        purpose: "Address barriers to return"
+        cta: "Let's talk"
+        key_messages:
+          - "we understand"
+          - "flexible options"
+          - "your needs matter"
+        length: "medium"
+
+      - step: 4
+        tone: "social proof, aspirational"
+        purpose: "Community growth and success"
+        cta: "See what's happening"
+        key_messages:
+          - "movement forward"
+          - "community strength"
+          - "collective growth"
+        length: "medium"
+
+      - step: 5
+        tone: "urgent, incentive-focused"
+        purpose: "Special return offer"
+        cta: "Come back with benefits"
+        key_messages:
+          - "special offer"
+          - "appreciation discount"
+          - "limited time"
+        length: "short"
+
+      - step: 6
+        tone: "warm, inviting"
+        purpose: "Final invitation and support"
+        cta: "Welcome back"
+        key_messages:
+          - "we're ready"
+          - "your evolution continues"
+          - "home awaits"
+        length: "short"
+
+  cold_outbound:
+    total_emails: 20
+    campaign_type: "cold_outbound"
+    description: "Full 20-email cold prospect acquisition sequence"
+    emails:
+      - step: 1
+        tone: "curious, non-pushy"
+        purpose: "Introduction - what is OHM?"
+        cta: "Learn more"
+        key_messages: ["digital-first spiritual platform", "modern approach", "you might be interested"]
+        length: "short"
+
+      - step: 2
+        tone: "relatable, aspirational"
+        purpose: "The problem most people face"
+        cta: "See if this resonates"
+        key_messages: ["misalignment", "seeking meaning", "conscious evolution"]
+        length: "medium"
+
+      - step: 3
+        tone: "educational, credible"
+        purpose: "How frequency-based therapy works"
+        cta: "Understand the science"
+        key_messages: ["frequency-based EMF", "longevity", "scientific + mystical"]
+        length: "long"
+
+      - step: 4
+        tone: "social proof, testimonial"
+        purpose: "Real member stories"
+        cta: "Read their journeys"
+        key_messages: ["transformation", "diverse community", "results"]
+        length: "medium"
+
+      - step: 5
+        tone: "educational, deep"
+        purpose: "The philosophy behind OHM"
+        cta: "Explore our values"
+        key_messages: ["alignment", "renewal", "conscious evolution"]
+        length: "long"
+
+      - step: 6
+        tone: "practical, inviting"
+        purpose: "Getting started is easy"
+        cta: "Try it free"
+        key_messages: ["accessible", "beginner-friendly", "no commitment"]
+        length: "medium"
+
+      - step: 7
+        tone: "community-focused"
+        purpose: "Join thousands on this path"
+        cta: "Be part of the community"
+        key_messages: ["movement", "collective growth", "shared values"]
+        length: "medium"
+
+      - step: 8
+        tone: "urgency-light"
+        purpose: "Limited free trial offer"
+        cta: "Claim your free week"
+        key_messages: ["exclusive offer", "limited time", "risk-free"]
+        length: "short"
+
+      - step: 9
+        tone: "reflective"
+        purpose: "Member transformation timeline"
+        cta: "See the progression"
+        key_messages: ["week 1 benefits", "month 1 breakthrough", "ongoing evolution"]
+        length: "medium"
+
+      - step: 10
+        tone: "comparative"
+        purpose: "Why OHM vs alternatives"
+        cta: "See the difference"
+        key_messages: ["digital-first", "frequency-based", "holistic approach"]
+        length: "medium"
+
+      - step: 11
+        tone: "aspirational, visionary"
+        purpose: "What could your life look like?"
+        cta: "Imagine your evolution"
+        key_messages: ["potential", "alignment", "conscious life"]
+        length: "medium"
+
+      - step: 12
+        tone: "educational, scientific"
+        purpose: "Research and credibility"
+        cta: "See our studies"
+        key_messages: ["evidence-based", "research-backed", "scientific integrity"]
+        length: "long"
+
+      - step: 13
+        tone: "personal, authentic"
+        purpose: "Founder story and mission"
+        cta: "Meet our founder"
+        key_messages: ["authentic passion", "mission-driven", "real person"]
+        length: "long"
+
+      - step: 14
+        tone: "practical, feature-focused"
+        purpose: "Platform features tour"
+        cta: "See the dashboard"
+        key_messages: ["intuitive design", "powerful tools", "user-friendly"]
+        length: "medium"
+
+      - step: 15
+        tone: "community highlight"
+        purpose: "Member spotlight series"
+        cta: "Read their story"
+        key_messages: ["diverse paths", "real transformations", "inspiration"]
+        length: "medium"
+
+      - step: 16
+        tone: "educational, mystical"
+        purpose: "Frequency and consciousness"
+        cta: "Deepen your understanding"
+        key_messages: ["energy work", "harmonic resonance", "universal principles"]
+        length: "long"
+
+      - step: 17
+        tone: "supportive, nurturing"
+        purpose: "Support and accountability"
+        cta: "Explore our community"
+        key_messages: ["guided journey", "support system", "accountability partners"]
+        length: "medium"
+
+      - step: 18
+        tone: "urgency, scarcity"
+        purpose: "Founding member benefits"
+        cta: "Lock in founding prices"
+        key_messages: ["exclusive founding tier", "lifetime benefits", "early bird pricing"]
+        length: "short"
+
+      - step: 19
+        tone: "warm, curious"
+        purpose: "What questions do you have?"
+        cta: "Reply and let's chat"
+        key_messages: ["personalized guidance", "we're here", "open conversation"]
+        length: "short"
+
+      - step: 20
+        tone: "final invitation, urgent"
+        purpose: "Last chance to join the movement"
+        cta: "Take the leap"
+        key_messages: ["your evolution starts now", "limited availability", "final invitation"]
+        length: "medium"

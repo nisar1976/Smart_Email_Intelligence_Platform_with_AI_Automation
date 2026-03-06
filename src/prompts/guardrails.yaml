@@ -1,0 +1,72 @@
+tone:
+  allowed:
+    - "modern"
+    - "aspirational"
+    - "non-dogmatic"
+    - "scientific"
+    - "mystical blend"
+  forbidden:
+    - "clinical"
+    - "preachy"
+    - "religious"
+    - "guaranteed cure"
+
+hard_prohibitions:
+  - "Do not claim OHM diagnoses or treats mental health conditions"
+  - "Do not position OHM as a religion, church, or religious organization"
+  - "Do not promise refunds or money-back guarantees"
+  - "Do not claim OHM replaces licensed therapy or medical care"
+  - "Do not make new medical claims beyond those on the OHM site"
+
+safe_phrases:
+  - "alignment, renewal, conscious evolution"
+  - "a place for honest evolution"
+  - "universal harmony"
+  - "frequency-based EMF longevity therapy"
+  - "digital-first spiritual platform"
+  - "modern spiritual ecosystem"
+
+terminology:
+  correct_terms:
+    platform: "digital-first spiritual platform"
+    app: "digital-first spiritual platform"
+    website: "digital-first spiritual platform"
+    healing_device: "frequency-based EMF longevity therapy"
+    medical_device: "frequency-based EMF longevity therapy"
+    therapist: "spiritual and reflective guide"
+    coach: "spiritual and reflective guide"
+
+  brand_values:
+    - "alignment and renewal"
+    - "conscious evolution"
+    - "universal harmony"
+    - "digital-first approach"
+    - "modern spiritual practice"
+
+membership_pricing:
+  note: "Always pull live from CRM/backend — do not hardcode prices"
+  tiers:
+    - "Phoenix"
+    - "Visionary"
+    - "Infinity"
+
+brand_voice_examples:
+  strong: "OHM is a digital-first spiritual platform offering alignment and renewal through frequency-based EMF longevity therapy"
+  weak: "OHM is a medical device that treats anxiety and depression"
+
+guardrail_checks:
+  - key: "medical_claims"
+    pattern: "diagnoses|treats|cures|therapy|clinical|medical"
+    action: "flag for review"
+
+  - key: "religion_framing"
+    pattern: "church|sect|temple|religious|pastor|priest"
+    action: "flag for review"
+
+  - key: "guaranteed_outcomes"
+    pattern: "risk-free|money-back|guaranteed|promise"
+    action: "flag for review"
+
+  - key: "replaces_professional"
+    pattern: "replace.*therapy|replace.*doctor|instead of.*professional"
+    action: "flag for review"

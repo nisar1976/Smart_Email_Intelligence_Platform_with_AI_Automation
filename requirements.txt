@@ -1,29 +1,44 @@
-openai>=1.3.0
-python-dotenv>=1.0.0
-requests>=2.31.0
-pydantic>=2.0.0
-httpx>=0.24.0
+# Email Intelligence Agent - Core Dependencies
+# Install with: uv pip install -r requirements.txt
+# Update with: uv pip freeze > requirements.txt
 
-# CRM Integrations
-hubspot-api-client>=0.7.0
+# OpenAI API
+openai>=1.0.0,<2.0.0
 
-# Data Processing
-pandas>=2.0.0
-numpy>=1.24.0
+# Data validation
+pydantic>=2.0.0,<3.0.0
+pydantic-settings>=2.0.0,<3.0.0
+email-validator>=2.0.0,<3.0.0
 
-# Database (optional, for local persistence)
-sqlalchemy>=2.0.0
-alembic>=1.13.0
+# Configuration
+python-dotenv>=1.0.0,<2.0.0
+pyyaml>=6.0.0,<7.0.0
 
-# Async support
-aiohttp>=3.9.0
+# HTTP requests
+requests>=2.31.0,<3.0.0
 
-# Testing
-pytest>=7.4.0
-pytest-asyncio>=0.21.0
-pytest-cov>=4.1.0
+# Web framework (for webhooks)
+fastapi>=0.104.0,<0.106.0
+uvicorn>=0.24.0,<0.25.0
 
-# Code quality
-black>=23.0.0
-flake8>=6.0.0
-mypy>=1.5.0
+# CRM integrations (optional)
+hubspot-api-client>=8.0.0,<9.0.0
+
+# Database (SQLAlchemy for future use)
+sqlalchemy>=2.0.0,<3.0.0
+
+# RAG pipeline (document indexing and retrieval)
+faiss-cpu>=1.7.4
+langchain>=0.1.0
+langchain-community>=0.0.20
+langchain-openai>=0.0.6
+pypdf>=3.17.0
+sentence-transformers>=2.2.2
+tiktoken>=0.5.0
+
+# Development dependencies (install with: uv pip install -r requirements-dev.txt)
+# pytest>=7.0.0,<8.0.0
+# pytest-cov>=4.0.0,<5.0.0
+# black>=23.0.0,<24.0.0
+# flake8>=6.0.0,<7.0.0
+# mypy>=1.0.0,<2.0.0
