@@ -72,3 +72,7 @@ frontend/.env.local
 # RAG index (can be regenerated)
 *.faiss
 docstore.pkl
+
+# OHM proprietary documents (do not push)
+*.pdf
+OHM — Full Brand Knowledge & Messaging Framework.txt
