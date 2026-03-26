@@ -1,6 +1,6 @@
-# OHM Email Intelligence Agent
+# Email Intelligence Agent
 
-**A fully autonomous AI-powered system that generates, deploys, and optimizes email campaigns for OHM**
+**A fully autonomous AI-powered system that generates, deploys, and optimizes email campaigns**
 
 **Project Completed:** March 6, 2026
 
@@ -72,7 +72,7 @@ Connect your Stripe account to trigger automated email sequences:
 
 ### 7. RAG Document Intelligence
 The system is trained on:
-- OHM's complete brand knowledge and messaging framework
+- complete brand knowledge and messaging framework
 - Service knowledge base (offerings, pricing, positioning)
 - Your complete 20-email sales sequence
 - Brand voice guidelines and tone specifications
